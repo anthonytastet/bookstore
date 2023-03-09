@@ -1,6 +1,0 @@
-mvn org.apache.maven.plugins:maven-install-plugin:3.1.0:install-file  -Dfile=/root/.jenkins/workspace/test-jenkins/target/net.Bookstore2.web-0.0.1-SNAPSHOT.war \
-                                                                              -DgroupId=1 \
-                                                                              -DartifactId=bookstore \
-                                                                              -Dversion=1.0-SNAPSHOT \
-                                                                              -Dpackaging=war \
-                                                                              -DlocalRepositoryPath=/home/trainee/net.Bookstore2.web-0.0.1-SNAPSHOT.war
