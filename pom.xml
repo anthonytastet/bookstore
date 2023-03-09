@@ -46,26 +46,7 @@
 				<artifactId>tomcat8-maven-plugin</artifactId>
 				<version>2.2</version>
 			</plugin>
-			<plugin>
-			    <groupId>org.apache.maven.plugins</groupId>
-			    <artifactId>maven-install-plugin</artifactId>
-			    <version>3.1.0</version>
-			    <executions>
-				<execution>
-				    <phase>initialize</phase>
-				    <goals>
-					<goal>install-file</goal>
-				    </goals>
-				    <configuration>
-					<groupId>com.roufid.tutorials</groupId>
-					<artifactId>bookstore</artifactId>
-					<version>1.0</version>
-					<packaging>war</packaging>
-					<file>$/root/.jenkins/workspace/test-jenkins/target/net.Bookstore2.web-0.0.1-SNAPSHOT.war</file>
-				    </configuration>
-				</execution>
-			    </executions>
-			</plugin>
+
 		</plugins>
 	</build>
 </project>
