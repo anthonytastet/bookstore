@@ -31,10 +31,29 @@
 	<build>
 		<plugins>
 			<plugin>
+			      <groupId>org.apache.maven.plugins</groupId>
+			      <artifactId>maven-enforcer-plugin</artifactId>
+			      <executions>
+				<execution>
+				  <id>enforce-versions</id>
+				  <goals>
+				    <goal>enforce</goal>
+				  </goals>
+				  <configuration>
+				    <rules>
+				      <requireJavaVersion>
+					<version>17.0.1</version>
+				      </requireJavaVersion>
+				    </rules>
+				  </configuration>
+				</execution>
+			      </executions>
+			    </plugin>
+			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.8.1</version>
 				<configuration>
-					<release>17.0.1</release>
+					<release>17</release>
 				</configuration>
 			</plugin>
 			<plugin>
